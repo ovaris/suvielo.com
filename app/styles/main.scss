@@ -1,0 +1,89 @@
+$iconSpritePath:                        "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath:                   "../images/glyphicons-halflings-white.png";
+$navbar-inverse-link-color:             #fff;
+$navbar-inverse-link-hover-color:       #82e6fe;
+$navbar-height:                         40px;
+$grid-gutter-width:                     8px;
+  
+@import "bootstrap-sass/lib/bootstrap";
+
+@import "http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900";
+@import url(http://fonts.googleapis.com/css?family=Fjord+One);
+@import url(http://fonts.googleapis.com/css?family=Karla);
+
+
+
+
+/* Put your CSS here */
+html, body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 150%;
+  color:#414042;
+  
+}
+
+.info a {
+  display: inline;
+}
+
+a.home {
+  background-image: url("../images/koti.png");
+  width: 30px;
+  height: 30px;
+}
+
+a.home:hover {
+  background-image: url("../images/koti-h.png");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+h1{
+  font-size: 42px;
+}
+
+.nappi{
+  background-color:rgb(130, 230, 254);
+  color:#414042;
+  border-radius: 5px;
+  border: 0px;
+  padding:1% 2% 1% 2%;
+  font-family: "Karla", serif;
+}
+.nappi:hover{
+  background-color:rgb(250, 156, 193);
+  text-decoration: none;
+}
+
+a {
+  display: block;
+}
+
+.sessio {
+  position:relative;
+  margin:0 auto;
+}
+
+.sessio a {
+  overflow: hidden;
+}
+
+.row {
+  margin-bottom: 8px;
+}
+
+.info {
+  background-color: rgb(244, 240, 114);
+  margin-top: 40px;
+  padding: 5% 0px 5% 0px;
+}
+.footer {
+  background-color: rgb(130, 230, 254);
+  margin-top: 40px;
+  padding: 5% 0px 5% 0px;
+}
