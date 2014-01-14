@@ -25,22 +25,23 @@ angular.module('directives', [])
             .css('left', 0).css('top', 0)
             .attr('rel', 'gallery')
             .css('z-index', 1)
+            .height(current.height())
+            .width(current.width())
             .show();
           current
             .css('position', 'relative')
             .css('z-index', 2)
             .animate({
-              height: current.height() + 'px',
               opacity: 0
             }, 600, function(){
               current
                 .hide()
                 .css('opacity', 100)
-                .removeAttr('rel')
-                .height('auto');
+                .removeAttr('rel');
               next
                 .css('position', 'static')
-                .height('auto');
+                .height('auto')
+                .width('auto');
             });
         };
         var first = cache.filter(':first').show(),
